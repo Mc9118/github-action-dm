@@ -1,0 +1,13 @@
+# .github/workflows/deploy.yml
+name: Deploy App
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Deploying application..."
