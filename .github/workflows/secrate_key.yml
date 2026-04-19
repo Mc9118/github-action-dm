@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Checking secret variables
         run: |
-          echo "Secret value"
+          echo "Secret value ${{secrets.MY_KEY}}"
