@@ -17,4 +17,4 @@ jobs:
       - name: Say hello
         env:
           FIRST_NAME: mayank
-        run: echo "$GREETING $FIRST_NAME is using $CLOUD! using my project  "
+        run: echo "$GREETING $FIRST_NAME is using $CLOUD! using my project ${{PROJECT_ID}}  "
