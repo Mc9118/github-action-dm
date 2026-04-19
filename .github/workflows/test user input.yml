@@ -34,4 +34,3 @@ jobs:
 
       - name: Display sum
         run: echo "The sum of ${​{ inputs.number1 }} and ${​{ inputs.number2 }} is ${​{ steps.sum.outputs.sum }}"
-```
