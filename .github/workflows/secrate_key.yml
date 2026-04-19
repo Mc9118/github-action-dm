@@ -15,4 +15,5 @@ jobs:
       
         run:
         
-        echo "secrate value: ${{secrate.MY_KEY}} "
+        echo "secret value: ${{secrate.MY_KEY}}"
+        ${{secrate.MY_KEY}} 
