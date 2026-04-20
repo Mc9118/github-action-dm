@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Deploying application..."
+      - run: echo "Deploying The Application..."
