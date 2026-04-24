@@ -1,2 +1,2 @@
 steps:
-  - run: echo "Runner worked" > test.txt
+  - run: echo "Runner worked" > demoo.txt
