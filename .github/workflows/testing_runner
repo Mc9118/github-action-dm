@@ -1,0 +1,14 @@
+name: Basic Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Show system info
+        run: |
+          echo "Hello from EC2 🚀"
+          uname -a
+          whoami
