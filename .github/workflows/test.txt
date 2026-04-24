@@ -1,0 +1,2 @@
+steps:
+  - run: echo "Runner worked" > test.txt
