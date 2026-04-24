@@ -1,4 +1,4 @@
-name: Test Runner
+name: Check EC2 Runner
 
 on: [push]
 
@@ -7,4 +7,5 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - run: echo "Hello from EC2 🚀"
+      - name: Create file on EC2
+        run: echo "Runner worked" > test.txt
