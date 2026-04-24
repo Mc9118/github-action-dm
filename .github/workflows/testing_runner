@@ -1,4 +1,4 @@
-name: Basic Test
+name: Test Runner
 
 on: [push]
 
@@ -7,8 +7,5 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Show system info
-        run: |
-          echo "Hello from EC2 🚀"
-          uname -a
-          whoami
+      - name: Test message
+        run: echo "Runner is working 🚀"
