@@ -1,1 +1,14 @@
 
+# .github/workflows/deploy.yml
+name: Deploy App
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - run: echo "Deploying The Application..."
