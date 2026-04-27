@@ -1,15 +1,16 @@
+
 name: myactions
 
 on:
-
-workflow_dispatch:
-
-runs-on:self-hosted
+  workflow_dispatch:
 
 jobs:
-env:
-greeting : hello
+  demo_job:
+    runs-on: self-hosted
 
-steps:
+    env:
+      greeting: hello
 
-run: echo "this is ec3 demo. so $greeting"
+    steps:
+      - name: Run demo
+        run: echo "this is ec2 demo, so $greeting"
