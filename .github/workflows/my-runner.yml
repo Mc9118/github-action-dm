@@ -1,4 +1,3 @@
-
 name: Testing workflow variables
 
 on:
@@ -9,7 +8,7 @@ env:
 
 jobs:
   greeting_job:
-    runs-on: self-hosted
+    runs-on: self-hosted   
 
     env:
       GREETING: Hello
@@ -18,4 +17,4 @@ jobs:
       - name: Say hello
         env:
           FIRST_NAME: mayank
-        run: echo "$GREETING $FIRST_NAME is using $CLOUD! with project ${{vars.PROJECT_ID}}!"
+        run: echo "$GREETING $FIRST_NAME is using $CLOUD! with project ${{ vars.PROJECT_ID }}!"
