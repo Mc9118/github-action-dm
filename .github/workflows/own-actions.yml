@@ -1,0 +1,15 @@
+name: myactions
+
+on:
+
+workflow_dispatch:
+
+runs-on:self-hosted
+
+jobs:
+env:
+greeting : hello
+
+steps:
+
+run: echo "this is ec3 demo. so $greeting"
