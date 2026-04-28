@@ -1,16 +1,15 @@
+name: github-workflow
 
- name: github-workflow
+on:
+  workflow_dispatch:
 
- on:
-    workflow_dispatch:
-
- jobs:
-   demo_run:
+jobs:
+  demo_run:
     runs-on: self-hosted
 
     env:
-       greet: "welcome devloper"
+      greet: "welcome developer"
 
     steps:
       - name: run_demo
-       run: echo "this is my runner $greet"
+        run: echo "this is my runner $greet"
