@@ -1,16 +1,16 @@
 
-name: myactions
+ name: github-workflow
 
-on:
-  workflow_dispatch:
+ on:
+    workflow_dispatch:
 
-jobs:
-  demo_job:
+ jobs:
+   demo_run:
     runs-on: self-hosted
 
     env:
-      greeting: hello
+       greet: "welcome devloper"
 
     steps:
-      - name: Run demo
-        run: echo "this is ec2 demo, so $greeting"
+      - name: run_demo
+       run: echo "this is my runner $greet"
