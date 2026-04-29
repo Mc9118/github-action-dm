@@ -1,1 +1,16 @@
 
+name: yaml_flow
+
+  on: 
+    workflow_dispatch:
+
+    jobs:
+       demo_run:
+         runs-on: ubuntu-latest
+
+          env:
+            greet: "hellodevlopers"
+
+          steps:
+           - name: run message
+            run: echo" $greet your internship"
